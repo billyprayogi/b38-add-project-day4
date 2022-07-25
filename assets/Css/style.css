@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background-color: rgb(76, 195, 241);
+    height: 7vh;
+    display: flex;
+}
+
+nav div{
+ display: flex;
+ align-items: center;
+}
+
+.left-side{
+    /*background-color: aqua;*/
+    flex: 50%;
+    
+}
+
+.left-side .logo{
+    width: 50px;
+    height: 50px;
+    padding-left: 90px;
+}
+
+.right-side{
+  /* background-color: bisque; */
+   flex: 50%;
+   justify-content: flex-end;
+   padding-right: 90px;
+  
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/*nav ul li a.active {
+    color: rgb(14, 13, 13);
+    font-weight: 800;}*/
+
+
+nav ul li a.Project{
+    color: black;
+    font-weight: 700;
+
+}
+
+nav .right-side a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 250, 250);
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 6px 16px;
+    cursor: pointer; 
+}
+
+.right-side a:hover{
+    padding: 8px 18px;
+}
+
+.personal {
+    height: 93vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    padding: 10px;
+    width:80%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px ;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.container .left{
+    flex: 70%;
+    /*background-color: rgb(245, 78, 0);*/
+    padding-left: 15px;
+    
+}
+
+.container .right{
+    flex: 35%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container .kontak{
+    background-color: black ;
+    color:white ; 
+    border-radius: 50px 50px; 
+    font-size: large;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    
+}
+
+ .left .icon{
+    justify-content: center;
+    padding: 50px 0px 0px 10px;
+}
+
+.container .cv{
+    padding-left: 20px;
+    color: black;
+}
+
+.container .left h1{
+    padding: 30px 0px 0px 0px;
+}
+
+.costumfile::-webkit-file-upload-button {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: large;
+    cursor: pointer;
+    }
+
+.active:hover{
+    color: red;
+}
+
+.Project:hover{
+    color: red;
+}
+.fa-fw{
+    padding-left: 175px;
+    margin-top: 5px;
+}
+.icon i:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+
+/*Style my project*/
+.head-project h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.card{
+    padding: 10px;
+    width:50%;
+    display: flex;
+    margin-top: 80px;
+}
+
+

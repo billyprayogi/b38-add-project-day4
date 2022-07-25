@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <title>Contact Me</title>
+   
+</head>
+
+<body>
+<nav>
+        <div class="left-side">
+            <a>
+                <img class="logo" src="assets/dumbways.png" alt="Logo">
+            </a>
+            <ul>
+                <li>
+                     <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="Project" href="addproject.html">My Project</a>
+                </li>
+                </ul>
+         </div>
+        <div class="right-side">
+            <a href="Form.html">Contact Me</a>
+         </div>
+</nav>
+ <div style="
+                width: 300px;
+                margin:auto;
+                margin-top: 30px;"
+                >
+
+                <form>
+                    <div style="
+                         margin-bottom: 50px;
+                         font-style: unset;
+                         font-size: 20px;
+                         font-weight: bold;
+                         text-align: center;">GET IN TOUCH</div>
+             
+                     <div>
+                         <label for="name" style="font-size: 20px; font-weight: 700;">Name</label>
+             
+                         <input id="name" required type="text"
+                         style="   width: 100%; 
+                         box-sizing: border-box;
+                         padding: 8px; 
+                         background-color: rgb(228, 225, 225);
+                         border: none;
+                         border-radius: 5px;
+                         margin-top: 1px;
+                         margin-bottom: 20px;" placeholder="text here">
+                     </div>
+                     
+                     <div>
+             
+                         <label for="email" style="font-size: 20px; font-weight: 700;">Email</label>
+             
+                         <input id="email" type="text" 
+                             style="
+                             width: 100%; 
+                             box-sizing: border-box; 
+                             padding: 8px; 
+                             background-color: rgb(228, 225, 225);
+                             border: none;
+                             border-radius: 5px;
+                             margin-top: 1px; 
+                             margin-bottom: 20px;" placeholder="text here">
+             
+                     </div>
+                 
+                     <div>
+                         <label for="phone"  style="font-size: 20px; font-weight: 700;">Phone number</label>
+             
+                         <input id="phone" type="text"
+                             style="
+                             width: 100%; 
+                             box-sizing: border-box; 
+                             padding: 8px; 
+                             background-color: rgb(228, 225, 225);;
+                             border: none;
+                             border-radius: 5px;
+                             margin-top: 1px;
+                             margin-bottom: 20px;" placeholder="text here">
+                     </div>
+                     
+                     <div>
+                         <label for="subject"  style="font-size: 20px; font-weight: 700;">Subject</label>
+             
+                         <select id="subject"
+                             style="
+                             width: 100%; 
+                             box-sizing: border-box; 
+                             padding: 8px; 
+                             background-color: rgb(228, 225, 225);
+                             border: none;
+                             border-radius: 5px;
+                             margin-top: 1px;
+                             margin-bottom: 20px; 
+                             " placeholder="text here">
+             
+                             <option value="Lets Talk">Lets Talk</option>
+                             <option value="Lets Collaboration">Lets Collaboration</option>
+                             <option value="Lets Create Project">Lets Create Project</option>
+                         </select>
+                     
+                         <label for="message"  style="font-size: 20px; font-weight: 700" >Your message</label>
+                         <textarea id="message" name="Description" rows="4" cols="43"
+                         style="
+                         width: 100%; 
+                         box-sizing: border-box; 
+                         padding: 8px; 
+                         background-color: rgb(228, 225, 225);
+                         border: none;
+                         border-radius: 5px;
+                         margin-bottom: 20px; 
+                         height: 100px; 
+                         resize: none;"
+                         placeholder="text here" ></textarea>
+             
+                     </div>
+             
+                     <button type="button" onclick="getData()"
+                             style="
+                             border: none;
+                             font-size: 18px;
+                             color: white;
+                             background-color: red;
+                             border-radius: 10px;
+                             padding: 8px 20px;
+                             cursor: pointer;">submit</button>
+             </form>  
+</div>
+
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <title>add project</title>
+</head>
+<body>
+    <nav>
+        <div class="left-side">
+            <a>
+                <img class="logo" src="assets/dumbways.png" alt="Logo">
+            </a>
+            <ul>
+                <li>
+                     <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="Project" href="addproject.html">My Project</a>
+                </li>
+                </ul>
+         </div>
+        <div class="right-side">
+            <a href="Form.html">Contact Me</a>
+         </div>
+</nav>
+
+
+<div style="
+    width: 400px;
+    margin:auto;
+    margin-top: 30px;"
+   >
+    
+
+ <form style="margin-bottom: 100px;" >
+        <div class="judul" style="
+             margin-bottom: 50px;
+             font-style: unset;
+             font-size: 20px;
+             font-weight: bold;
+             text-align: center;
+             ">Add my project</div>
+
+         <div>
+             <label for="name" style="font-size: 20px; font-weight: 700;">project name</label>
+
+             <input id="name" required type="text"
+             style="width: 100%; 
+             box-sizing: border-box;
+             padding: 8px; 
+             background-color: rgb(228, 225, 225);
+             border: none;
+             border-radius: 5px;
+             margin-top: 1px;
+             margin-bottom: 20px;" placeholder="text here">
+         </div>
+         
+         <div>
+
+             <label for="start" style="font-size: 20px; font-weight: 700; padding-right: 65px;">start date</label>
+             <label for="end"  style="font-size: 20px; font-weight: 700;">end date</label>
+          </div>
+
+           <div>
+                 <input id="startdate" type="date" 
+                 style="
+                 width: 48%;
+                 box-sizing: border-box; 
+                 padding: 8px ; 
+                 background-color: rgb(228, 225, 225);
+                 border: none;
+                 border-radius: 5px;
+                 margin-top: 1px; 
+                 margin-bottom: 20px;" placeholder="text here">
+ 
+                 <input id="enddate" type="date"
+                 style="
+                 width: 50%;
+                 box-sizing: border-box; 
+                 padding: 8px; 
+                 background-color: rgb(228, 225, 225);;
+                 border: none;
+                 border-radius: 5px;
+                 margin-top: 1px;
+                 margin-bottom: 20px;" placeholder="text here">
+           </div>          
+        
+         
+         <div>
+ 
+             <label for="Description" style="font-size: 20px; font-weight: 700">Description</label>
+ 
+             <textarea id="Description" name="Description" rows="4" cols="43" 
+             style="
+             width: 100%; 
+             box-sizing: border-box; 
+             padding: 8px; 
+             background-color: rgb(228, 225, 225);
+             border: none;
+             border-radius: 5px;
+             margin-top: 1px;
+             margin-bottom: 20px; 
+             height: 100px; 
+             resize: none;"
+             placeholder="text here" ></textarea>
+            
+         </div>
+ 
+         <div style="margin-bottom: 10px">
+             <label style="font-size: 20px; font-weight: 700;">technologies</label> 
+         </div>
+ 
+         <div>
+             <label for="node"  style="padding-right: 42px">
+                 <input id="node" type="checkbox">
+                 <span>Node Js</span>
+             </label for="react">
+                 <input id="react" type="checkbox">
+                 <span>React Js</span>
+             </label>
+            
+          <div>
+              <label for="next" style="padding-right: 50px">
+                     <input id="next" type="checkbox">
+                     <span>Next Js</span>  
+             </label>
+             
+             <label for="Typescript">     
+                 <input id="Typescript"  type="checkbox">
+                 <span>Typescript</span>
+             </label>
+          </div>   
+         </div>
+ 
+         <label>
+ 
+         <div style="margin-top: 10px;">
+             <label for="image"  
+             style=
+             "font-size: 20px;
+              font-weight:700;
+             "
+             >Upload image</label>  
+             <div>
+                <input id="image" type="file" style="
+                box-sizing: border-box; 
+                width: 100%;
+                background-color: rgb(228, 225, 225);
+                border-radius: 10px;
+                cursor: pointer;" id="image" type="file" class="costumfile"><i class="fa-solid fa-file-image fa-stack-2x fa-fw" hidden></i></input> 
+             </div>
+           
+         </div>
+                <button type="button" onclick="addproject()"
+                style="
+                border: none;
+                font-size: 18px;
+                color: white;
+                background-color: red;
+                border-radius: 10px;
+                padding: 8px 20px;
+                margin-top: 20px;
+                margin-left: 300px;
+                cursor: pointer;">submit</button> 
+</form> 
+</div>
+
+<div class="project">
+    <div class="head-project">
+        <h1>My Project</h1>
+    </div>
+    <div id="card" class="card">
+       <div>
+        <div style="
+        border: 1px solid; 
+        width: 300px; 
+        margin: auto;
+        border-radius: 5px;
+        background: white;
+        padding: 10px 10px 10px 10px;">
+    
+        <img style="border-radius: 10px;" src="assets/Billyp.jpg" alt="My Photo" 
+            width="300px">
+        <h3 style="padding: 10px 10px 0px 10px; margin:0px 0px 0px 0px;">dumbways mobile app - 2021</h3>
+        <p style="padding: 1px 10px 0px 10px; margin:0px 0px 0px 0px;">duration: 3 bulan</p>
+        <p style="padding: 10px 10px 0px 10px;
+        margin:0px 0px 10px 0px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus corporis maiores maxime odio aliquid ea, facilis eius saepe nobis necessitatibus optio. Quidem non quia quod blanditiis ipsum id unde adipisci Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <table class="mb-3" style="margin-left: 20px">
+            <tr>
+            <th><i class="fa-brands fa-node-js fa-2x"></i></th>
+            <th><i class="fa-brands fa-angular fa-2x px-2"></i></th>
+            <th><i class="fa-brands fa-react fa-2x"></i></th>
+            <th><i class="fa-brands fa-java fa-2x px-2"></i></th>
+            </tr>
+          </table>
+    
+        <div style="margin-left: 10px; padding-top: 10px;">
+            <button type="button" "
+            style="
+            border: none;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(3, 3, 3);
+            border-radius: 5px;
+            padding: 2px 50px;
+            cursor: pointer;">edit</button>
+        
+          
+            <button type="button" "
+            style="
+            border: none;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(12, 12, 12);
+            border-radius: 5px;
+            padding: 2px 50px;
+            cursor: pointer;">delete</button>
+        </div>
+        </div>
+       </div>
+
+    </div>
+ </div>   
+
+
+
+</body>
+<script src="assets/js/project.js"></script>
+</html>
